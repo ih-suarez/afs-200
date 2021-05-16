@@ -1,5 +1,5 @@
 # Name Input and output
 city=input('What is your city of residence? ')
-zipcode=input('What is your zipcode? ')
-print('Your city of residence is', city, 'and your zipcode:', zipcode)
+zipcode=int(input('What is your zipcode? '))
+print(f"Your city of residence is {city.capitalize()} and your zipcode: {zipcode}")
 
