@@ -1,3 +1,4 @@
+# Getting input to determine if even or odd
 class user_input_eve_or_odd():
     number = int(input('What number do you have for me? '))
     check_if_even_or_odd = number % 2
