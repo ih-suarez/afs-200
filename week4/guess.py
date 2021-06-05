@@ -20,7 +20,7 @@ def game():
 
         if int(user_guess) == number_to_guess:
             print(f"{name.capitalize()} you guessed it! You got it in {number_of_guesses} guesses. ")
-            user_guess = input(f'Keep playing... 1-9, hit me ')
+            user_guess = input(f'Keep playing... 1-9, hit me with another guess. ')
             number_of_guesses = 1
 
         if str(user_guess)  == user_exit:
