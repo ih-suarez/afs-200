@@ -19,8 +19,8 @@ def game():
             user_guess = input(f'{name.capitalize()} give it another shot, 1-9 ')
 
         if int(user_guess) == number_to_guess:
-            print(f"{name.capitalize()} you guessed it! You got it in {number_of_guesses} guesses. ")
             print(f"You can type 'exit' to stop playing.")
+            print(f"{name.capitalize()} you guessed it! You got it in {number_of_guesses} guesses. ")
             user_guess = input(f"Keep playing... 1-9, hit me with another guess ")
             number_of_guesses = 0
 
