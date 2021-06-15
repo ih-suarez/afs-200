@@ -6,8 +6,10 @@ def step1():
 
     user_input = [num1, num2, num3]
     input_max = max(num for num in user_input)
+    input_min = min(num for num in user_input)
 
     print(f'Your Numbers are: {user_input}. Calculating the max. ')
-    print(f'The Max from the numbers you have given me is {input_max}')
+    print(f'The Max from the numbers given is {input_max}')
+    print(f'The Min from the numbers given is {input_min}')
 
 step1()
