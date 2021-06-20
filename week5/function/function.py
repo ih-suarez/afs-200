@@ -1,10 +1,11 @@
 def step1():
+    user_input = []
     print(f'I will be asking you for 3 numbers')
-    num1 = int(input(f'Give me the first number: '))
-    num2 = int(input(f'Give me the second number: '))
-    num3 = int(input(f'Give me the third number: '))
+    
+    for i in range(3):
+        num = int(input(f'Give me a number: '))
+        user_input.append(num)
 
-    user_input = [num1, num2, num3]
     input_max = max(num for num in user_input)
     input_min = min(num for num in user_input)
 
