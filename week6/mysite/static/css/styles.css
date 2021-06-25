@@ -2,20 +2,33 @@
     margin: 0;
 }
 
-body {background-color: rgba(202, 199, 199, 0.664);}
+body {
+    background-color: rgba(202, 199, 199);
+}
+
+.bg {
+    background-image: url('https://images.unsplash.com/photo-1551223456-5bc4b74aba51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') ;
+}
 
 .name-form {
+    background-color: rgba(26, 146, 56, 0.774);
     text-align: center;
-    width: 250px;
-    margin:  100px auto;
+    width: 200px;
+    margin:  300px auto;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 2px 5px 9px black;
+    box-shadow: inset -7px 10px 17px rgb(194, 182, 18);
+
+    
+}
+
+.button {
+    margin: 14px;
 }
 
 .input {
     margin: 15px;
-    color: rgba(13, 13, 165, 0.582);
+    color: rgb(255, 255, 255);
 }
 
 .welcome {
@@ -34,10 +47,11 @@ p {
 
 .paragraph {
     margin: auto;
+    margin-top: 150px;
     width: 600px;
     border: 1px solid rgba(82, 129, 167, 0.411);
     padding: 20px;
     border-radius: 25px;
-    background-color: rgba(82, 129, 167, 0.411);
+    background-color: rgba(82, 129, 167, 0.89);
     box-shadow: 5px 5px 6px black;
 }
