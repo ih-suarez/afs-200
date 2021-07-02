@@ -37,7 +37,7 @@ def add_todo(request):
 
 # def delete_todo(request, id):
 #     Todo.objects.get(id=id).delete()
-#     return redirect('/')
+#     return render(request, 'index.html')
 
 
 # def add_todo(request):
