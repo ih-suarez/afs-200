@@ -16,12 +16,12 @@ def login(request):
     return render(request, 'login.html')
 
 def home(request):
-    username = request.GET['username']
+    # username = request.GET['username']
     todo_items = Todo.objects.all()
     return render(request, 'index.html',
     {
         "todo_items": todo_items,
-        'username': username
+        # 'username': username
     },)
 
 
