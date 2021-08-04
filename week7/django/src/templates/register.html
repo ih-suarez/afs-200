@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form class="input-group-sm" method="POST" action="register">
+        {% csrf_token %}
+        {{form.as_p}}
+        <!-- <input type="text" required name="username" placeholder="Username" >
+        <input type="password" required name="password" placeholder="Password" >
+        <input type="submit" title="Log In" > -->
+        <button class="btn-success" style="background-color: dodgerblue; border-radius: 15px; outline: none; "  type="submit">Make Todo Account</button>
+    </form>
+
+    If you already have an account, <a href="login"><strong> Login Here</strong></a>
+{% endblock %}

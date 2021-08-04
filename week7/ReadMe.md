@@ -1,0 +1,1 @@
+> The purpose of this project is to use your accumulated knowledge of Python and Django to create a fully responsive, functional, and interactive web application. You will be creating a web application using the Django environment.

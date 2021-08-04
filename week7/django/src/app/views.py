@@ -4,25 +4,35 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 from app.models import Todo
 from .forms import TodoForm
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, request
 from django.http import HttpResponse
 from django.http.response import HttpResponse
 from django.contrib import messages
-
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, logout, authenticate
 
 # Create your views here.
 
-def login(request):
-    return render(request, 'login.html')
+# def logout(request):
+#     logout(request)
+#     messages.info(request, 'Logged out Successfully')
+#     return redirect('index.html')
+
+
+
+
 
 def home(request):
     # username = request.GET['username']
     todo_items = Todo.objects.all()
     return render(request, 'index.html',
     {
-        "todo_items": todo_items,
+        "todo_items": todo_items
+        
         # 'username': username
     },)
+
+
 
 
 def add_todo(request):
@@ -35,9 +45,10 @@ def add_todo(request):
         return render(request, '404.html')
 
 
-# def delete_todo(request, id):
-#     Todo.objects.get(id=id).delete()
-#     return render(request, 'index.html')
+def delete_todo(request, id):
+    Todo.objects.get(id=id).delete()
+    todo_items = Todo.objects.all()
+    return render(request, 'index.html', {"todo_items": todo_items},)
 
 
 # def add_todo(request):
