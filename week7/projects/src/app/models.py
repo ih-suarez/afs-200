@@ -3,5 +3,5 @@ from datetime import datetime
 
 
 class Todo(models.Model):
-    todo = models.CharField(max_length=50, blank=True, default='')
+    todo = models.CharField(max_length=50, blank=True)
     added_date = models.DateTimeField(datetime.now())

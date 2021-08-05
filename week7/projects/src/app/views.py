@@ -30,7 +30,7 @@ def register(request):
 def logout_request(request):
     logout(request)
     messages.info(request, 'Log Out Successful')
-    return redirect('home')
+    return redirect('login')
 
 def login_request(request):
     if request.method == 'POST':
